@@ -14,9 +14,14 @@
 		CB13085B26E7F22A0088648A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB13085A26E7F22A0088648A /* Assets.xcassets */; };
 		CB13085E26E7F22A0088648A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB13085C26E7F22A0088648A /* LaunchScreen.storyboard */; };
 		CB13086926E7F22B0088648A /* Proj_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13086826E7F22B0088648A /* Proj_1Tests.swift */; };
-		CB13087426E7F22B0088648A /* Proj_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13087326E7F22B0088648A /* Proj_1UITests.swift */; };
-		CB13088226E7FF3B0088648A /* table_options.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB13088126E7FF3B0088648A /* table_options.plist */; };
 		CB13088426E7FF9B0088648A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13088326E7FF9B0088648A /* TableViewController.swift */; };
+		CB13088626E808FF0088648A /* AppOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB13088526E808FF0088648A /* AppOptions.plist */; };
+		CB567BDD26E957B700DF8333 /* Proj_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13087326E7F22B0088648A /* Proj_1UITests.swift */; };
+		CB567BDF26E9677700DF8333 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB567BDE26E9677700DF8333 /* ScrollViewController.swift */; };
+		CB567BE126E967C400DF8333 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB567BE026E967C400DF8333 /* CollectionViewController.swift */; };
+		CB567BE326E9690A00DF8333 /* GetRandomMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB567BE226E9690A00DF8333 /* GetRandomMovieViewController.swift */; };
+		CBD24B4F26EA5D6F0057979E /* movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD24B4E26EA5D6F0057979E /* movies.plist */; };
+		CBD24B5126EA68240057979E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD24B5026EA68240057979E /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +56,13 @@
 		CB13086F26E7F22B0088648A /* Proj 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Proj 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB13087326E7F22B0088648A /* Proj_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proj_1UITests.swift; sourceTree = "<group>"; };
 		CB13087526E7F22B0088648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB13088126E7FF3B0088648A /* table_options.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = table_options.plist; sourceTree = "<group>"; };
 		CB13088326E7FF9B0088648A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CB13088526E808FF0088648A /* AppOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppOptions.plist; sourceTree = "<group>"; };
+		CB567BDE26E9677700DF8333 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		CB567BE026E967C400DF8333 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		CB567BE226E9690A00DF8333 /* GetRandomMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomMovieViewController.swift; sourceTree = "<group>"; };
+		CBD24B4E26EA5D6F0057979E /* movies.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = movies.plist; sourceTree = "<group>"; };
+		CBD24B5026EA68240057979E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +117,16 @@
 				CB13085326E7F2290088648A /* SceneDelegate.swift */,
 				CB13085526E7F2290088648A /* RootViewController.swift */,
 				CB13088326E7FF9B0088648A /* TableViewController.swift */,
+				CB567BDE26E9677700DF8333 /* ScrollViewController.swift */,
+				CB567BE026E967C400DF8333 /* CollectionViewController.swift */,
+				CBD24B5026EA68240057979E /* CollectionViewCell.swift */,
 				CB13085726E7F2290088648A /* Main.storyboard */,
 				CB13085A26E7F22A0088648A /* Assets.xcassets */,
 				CB13085C26E7F22A0088648A /* LaunchScreen.storyboard */,
 				CB13085F26E7F22A0088648A /* Info.plist */,
-				CB13088126E7FF3B0088648A /* table_options.plist */,
+				CB13088526E808FF0088648A /* AppOptions.plist */,
+				CB567BE226E9690A00DF8333 /* GetRandomMovieViewController.swift */,
+				CBD24B4E26EA5D6F0057979E /* movies.plist */,
 			);
 			path = "Proj 1";
 			sourceTree = "<group>";
@@ -237,10 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB13088226E7FF3B0088648A /* table_options.plist in Resources */,
 				CB13085E26E7F22A0088648A /* LaunchScreen.storyboard in Resources */,
 				CB13085B26E7F22A0088648A /* Assets.xcassets in Resources */,
+				CBD24B4F26EA5D6F0057979E /* movies.plist in Resources */,
 				CB13085926E7F2290088648A /* Main.storyboard in Resources */,
+				CB13088626E808FF0088648A /* AppOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB567BE126E967C400DF8333 /* CollectionViewController.swift in Sources */,
 				CB13085626E7F2290088648A /* RootViewController.swift in Sources */,
+				CBD24B5126EA68240057979E /* CollectionViewCell.swift in Sources */,
 				CB13085226E7F2290088648A /* AppDelegate.swift in Sources */,
+				CB567BDF26E9677700DF8333 /* ScrollViewController.swift in Sources */,
+				CB567BE326E9690A00DF8333 /* GetRandomMovieViewController.swift in Sources */,
 				CB13085426E7F2290088648A /* SceneDelegate.swift in Sources */,
 				CB13088426E7FF9B0088648A /* TableViewController.swift in Sources */,
 			);
@@ -276,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB567BDD26E957B700DF8333 /* Proj_1UITests.swift in Sources */,
 				CB13086926E7F22B0088648A /* Proj_1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +305,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB13087426E7F22B0088648A /* Proj_1UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

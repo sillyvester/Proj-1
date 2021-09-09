@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>genres</key>
+	<dict>
+		<key>Biography or Documentary</key>
+		<array>
+			<string>Lion</string>
+			<string>Hacksaw Ridge</string>
+			<string>Hidden Figures</string>
+			<string>The Founder</string>
+			<string>Silence</string>
+			<string>Sully</string>
+			<string>Patriots Day</string>
+			<string>Deepwater Horizon</string>
+			<string>The Wolf of Wall Street</string>
+			<string>The Help</string>
+			<string>War Dogs</string>
+		</array>
+		<key>Drama</key>
+		<array>
+			<string>Arrival</string>
+			<string>Lowriders</string>
+			<string>Passengers</string>
+			<string>La La Land</string>
+			<string>Manchester by the Sea</string>
+			<string>Miss Sloane</string>
+			<string>Nocturnal Animals</string>
+			<string>Moonlight</string>
+			<string>Fallen</string>
+			<string>The Last Face</string>
+			<string>Me Before You</string>
+			<string>The Girl on the Train</string>
+			<string>Fifty Shades of Grey</string>
+			<string>The Prestige</string>
+			<string>Wakefield</string>
+			<string>The Promise</string>
+			<string>Allied</string>
+			<string>A Monster Calls</string>
+			<string>Collateral Beauty</string>
+			<string>Gone Girl</string>
+			<string>Live by Night</string>
+			<string>The Hateful Eight</string>
+			<string>Prisoners</string>
+			<string>Kimi no na wa</string>
+		</array>
+		<key>Comedy</key>
+		<array>
+			<string>Mindhorn</string>
+			<string>Paris pieds nus</string>
+			<string>Bad Moms</string>
+			<string>Why Him?</string>
+			<string>5:25:1977</string>
+			<string>Mother&apos;s Day</string>
+			<string>Sausage Party</string>
+			<string>Their Finest</string>
+			<string>Captain Fantastic</string>
+		</array>
+		<key>Family</key>
+		<array>
+			<string>The Secret Life of Pets</string>
+			<string>Sing</string>
+			<string>Moana</string>
+			<string>Trolls</string>
+			<string>Zootopia</string>
+		</array>
+		<key>Horror</key>
+		<array>
+			<string>Split</string>
+			<string>Hounds of Love</string>
+			<string>Dead Awake</string>
+			<string>Resident Evil- The Final Chapter</string>
+			<string>The Cabin In The Woods</string>
+			<string>Don&apos;t Breathe</string>
+			<string>The Autopsy of Jane Doe</string>
+			<string>The Void</string>
+			<string>Personal Shopper</string>
+			<string>The Departed</string>
+		</array>
+		<key>Action &amp; Adventure</key>
+		<array>
+			<string>Jason Bourne</string>
+			<string>Fantastic Beasts and Where to Find Them</string>
+			<string>Prometheus</string>
+			<string>Suicide Squad</string>
+			<string>The Great Wall</string>
+			<string>The Lost City of Z</string>
+			<string>Rogue One</string>
+			<string>Colossal</string>
+			<string>Gold</string>
+			<string>Independence Day- Resurgence</string>
+			<string>Bahubali- The Beginning</string>
+			<string>Assassin&apos;s Creed</string>
+			<string>X-Men- Apocalypse</string>
+			<string>Deadpool</string>
+			<string>Captain America- Civil War</string>
+			<string>Interstellar</string>
+			<string>Doctor Strange</string>
+			<string>The Magnificent Seven</string>
+			<string>Pirates of the Caribbean- On Stranger Tides</string>
+			<string>Star Trek Beyond</string>
+			<string>Star Wars- Episode VII - The Force Awakens</string>
+			<string>Underworld- Blood Wars</string>
+			<string>John Wick</string>
+			<string>The Dark Knight</string>
+			<string>Batman v Superman- Dawn of Justice</string>
+			<string>Kingsman- The Secret Service</string>
+			<string>Mad Max- Fury Road</string>
+			<string>Pirates of the Caribbean- At World&apos;s End</string>
+			<string>The Avengers</string>
+			<string>Pirates of the Caribbean- Dead Man&apos;s Chest</string>
+			<string>Ghostbusters</string>
+			<string>Inception</string>
+			<string>Inglourious Basterds</string>
+			<string>Furious Seven</string>
+			<string>Jurassic World</string>
+			<string>Avatar</string>
+			<string>The Accountant</string>
+			<string>Warcraft</string>
+			<string>Avengers- Age of Ultron</string>
+			<string>The Nice Guys</string>
+		</array>
+	</dict>
+</dict>
+</plist>
