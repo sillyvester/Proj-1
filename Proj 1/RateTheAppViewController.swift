@@ -28,9 +28,11 @@ class RateTheAppViewController: UIViewController {
         if (sender.selectedSegmentIndex == 1) {
             ratingStepper.isHidden = true;
             ratingSlider.isHidden = false;
+            ratingSlider.setValue(Float(ratingStepper.value), animated: false)
         } else {
             ratingStepper.isHidden = false;
             ratingSlider.isHidden = true;
+            ratingStepper.value = Double(ratingSlider.value)
         }
     }
     
