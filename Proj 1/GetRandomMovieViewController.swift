@@ -13,9 +13,9 @@ class GetRandomMovieViewController: UIViewController, UIPickerViewDelegate, UIPi
 
     
     @IBOutlet weak var genrePicker: UIPickerView!
-    var pickerData: [String] = [String]()
+    lazy var pickerData: [String] = [String]()
     
-    var selectedPickerValue: String = ""
+    lazy var selectedPickerValue: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

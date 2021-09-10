@@ -11,8 +11,8 @@ private let reuseIdentifier = "CollectCell"
 
 class CollectionViewController: UICollectionViewController{
     
-    var movies = [String]()
-    var genreDictionary = [String]()
+    lazy var movies = [String]()
+    lazy var genreDictionary = [String]()
 
     
     override func viewDidLoad() {

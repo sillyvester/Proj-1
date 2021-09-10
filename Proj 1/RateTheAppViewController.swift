@@ -21,7 +21,7 @@ class RateTheAppViewController: UIViewController {
     @IBOutlet weak var ratingStepper: UIStepper!
     @IBOutlet weak var ratingSlider: UISlider!
     
-    var curRating = 0
+    lazy var curRating = 0
     
     
     func initStepper(){

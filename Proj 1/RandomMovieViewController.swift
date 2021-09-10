@@ -9,7 +9,7 @@ import UIKit
 
 
 class RandomMovieViewController: UIViewController {
-    var genreName: String = ""
+    lazy var genreName: String = ""
     @IBOutlet weak var movieName: UILabel!
     @IBOutlet weak var moviePoster: UIImageView!
     
