@@ -7,7 +7,6 @@
 		<string>showScrollView</string>
 		<string>showCollectionView</string>
 		<string>showGetRandomMovie</string>
-		<string>showRateApp</string>
 	</array>
 	<key>AppOptions2</key>
 	<dict>
@@ -17,15 +16,12 @@
 		<string>See Top 100 Movies (Summary)</string>
 		<key>showGetRandomMovie</key>
 		<string>Get a Random Movie</string>
-		<key>showRateApp</key>
-		<string>Rate The App</string>
 	</dict>
 	<key>AppOptionsLabels</key>
 	<array>
 		<string>See Top 100 Movies (Scroll)</string>
 		<string>See Top 100 Movies (Summary)</string>
 		<string>Get a Random Movie</string>
-		<string>Rate the App</string>
 	</array>
 </dict>
 </plist>

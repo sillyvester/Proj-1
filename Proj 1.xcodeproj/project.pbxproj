@@ -20,8 +20,10 @@
 		CB567BDF26E9677700DF8333 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB567BDE26E9677700DF8333 /* ScrollViewController.swift */; };
 		CB567BE126E967C400DF8333 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB567BE026E967C400DF8333 /* CollectionViewController.swift */; };
 		CB567BE326E9690A00DF8333 /* GetRandomMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB567BE226E9690A00DF8333 /* GetRandomMovieViewController.swift */; };
+		CBCCB9D826EAE1EF00BE9D60 /* RateTheAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCB9D726EAE1EF00BE9D60 /* RateTheAppViewController.swift */; };
 		CBD24B4F26EA5D6F0057979E /* movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBD24B4E26EA5D6F0057979E /* movies.plist */; };
 		CBD24B5126EA68240057979E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD24B5026EA68240057979E /* CollectionViewCell.swift */; };
+		CBD24B5326EA795A0057979E /* RandomMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD24B5226EA795A0057979E /* RandomMovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +63,10 @@
 		CB567BDE26E9677700DF8333 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		CB567BE026E967C400DF8333 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CB567BE226E9690A00DF8333 /* GetRandomMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRandomMovieViewController.swift; sourceTree = "<group>"; };
+		CBCCB9D726EAE1EF00BE9D60 /* RateTheAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTheAppViewController.swift; sourceTree = "<group>"; };
 		CBD24B4E26EA5D6F0057979E /* movies.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = movies.plist; sourceTree = "<group>"; };
 		CBD24B5026EA68240057979E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CBD24B5226EA795A0057979E /* RandomMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +124,14 @@
 				CB567BDE26E9677700DF8333 /* ScrollViewController.swift */,
 				CB567BE026E967C400DF8333 /* CollectionViewController.swift */,
 				CBD24B5026EA68240057979E /* CollectionViewCell.swift */,
+				CB567BE226E9690A00DF8333 /* GetRandomMovieViewController.swift */,
+				CBD24B5226EA795A0057979E /* RandomMovieViewController.swift */,
+				CBCCB9D726EAE1EF00BE9D60 /* RateTheAppViewController.swift */,
 				CB13085726E7F2290088648A /* Main.storyboard */,
 				CB13085A26E7F22A0088648A /* Assets.xcassets */,
 				CB13085C26E7F22A0088648A /* LaunchScreen.storyboard */,
 				CB13085F26E7F22A0088648A /* Info.plist */,
 				CB13088526E808FF0088648A /* AppOptions.plist */,
-				CB567BE226E9690A00DF8333 /* GetRandomMovieViewController.swift */,
 				CBD24B4E26EA5D6F0057979E /* movies.plist */,
 			);
 			path = "Proj 1";
@@ -285,8 +291,10 @@
 				CB13085626E7F2290088648A /* RootViewController.swift in Sources */,
 				CBD24B5126EA68240057979E /* CollectionViewCell.swift in Sources */,
 				CB13085226E7F2290088648A /* AppDelegate.swift in Sources */,
+				CBCCB9D826EAE1EF00BE9D60 /* RateTheAppViewController.swift in Sources */,
 				CB567BDF26E9677700DF8333 /* ScrollViewController.swift in Sources */,
 				CB567BE326E9690A00DF8333 /* GetRandomMovieViewController.swift in Sources */,
+				CBD24B5326EA795A0057979E /* RandomMovieViewController.swift in Sources */,
 				CB13085426E7F2290088648A /* SceneDelegate.swift in Sources */,
 				CB13088426E7FF9B0088648A /* TableViewController.swift in Sources */,
 			);
