@@ -10,16 +10,12 @@ import UIKit
 // Picker code adapted from: https://codewithchris.com/uipickerview-example/
 
 class GetRandomMovieViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
-
     
     @IBOutlet weak var genrePicker: UIPickerView!
     lazy var pickerData: [String] = [String]()
-    
     lazy var selectedPickerValue: String = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         self.genrePicker.delegate = self
         self.genrePicker.dataSource = self
         
