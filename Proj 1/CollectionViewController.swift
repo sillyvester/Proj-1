@@ -12,7 +12,6 @@ private let reuseIdentifier = "CollectCell"
 class CollectionViewController: UICollectionViewController{
     
     var movies = [String]()
-    var genreDictionary = [String]()
 
     
     override func viewDidLoad() {
@@ -49,4 +48,5 @@ class CollectionViewController: UICollectionViewController{
             fatalError("Could not dequeue cell")
         }
     }
+
 }
