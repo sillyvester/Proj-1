@@ -17,12 +17,24 @@ class RateTheAppViewController: UIViewController {
     
     var delegate: RateTheAppViewControllerDelegate?
 
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var currentRatingLabel: UILabel!
     @IBOutlet weak var ratingStepper: UIStepper!
     @IBOutlet weak var ratingSlider: UISlider!
     
     lazy var curRating = 0
     
+    @IBAction func segementedControlChange(_ sender: UISegmentedControl) {
+        if (sender.selectedSegmentIndex == 1) {
+            ratingStepper.isHidden = true;
+            ratingSlider.isHidden = false;
+            ratingSlider.setValue(Float(ratingStepper.value), animated: false)
+        } else {
+            ratingStepper.isHidden = false;
+            ratingSlider.isHidden = true;
+            ratingStepper.value = Double(ratingSlider.value)
+        }
+    }
     
     func initStepper(){
         ratingStepper.wraps = false
@@ -48,6 +60,7 @@ class RateTheAppViewController: UIViewController {
     
     @IBAction func onStepperChanged(_ sender: UIStepper) {
         let newRating = Int(sender.value)
+        print("stepper new rating: ", newRating)
         if (newRating > 10){
             self.curRating = 10
         }else{
@@ -58,6 +71,7 @@ class RateTheAppViewController: UIViewController {
     
     @IBAction func onSliderChanged(_ sender: UISlider) {
         let newRating = Int(sender.value)
+        print("slider new rating: ", newRating)
         if (newRating > 10){
             self.curRating = 10
         }else{
@@ -71,7 +85,9 @@ class RateTheAppViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initStepper()
-        // Do any additional setup after loading the view.
+
+        ratingStepper.isHidden = false;
+        ratingSlider.isHidden = true;
     }
     
 

@@ -49,4 +49,5 @@ class CollectionViewController: UICollectionViewController{
             fatalError("Could not dequeue cell")
         }
     }
+
 }

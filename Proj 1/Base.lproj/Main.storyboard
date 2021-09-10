@@ -235,19 +235,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="uN3-Ia-Ztg">
-                                <rect key="frame" x="68" y="584" width="278" height="31"/>
+                                <rect key="frame" x="68" y="401" width="278" height="31"/>
                                 <connections>
                                     <action selector="onSliderChanged:" destination="klF-Cn-5HN" eventType="valueChanged" id="sTq-tR-ZPY"/>
                                 </connections>
                             </slider>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-QE-KkV">
-                                <rect key="frame" x="160" y="486" width="94" height="32"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-QE-KkV">
+                                <rect key="frame" x="160" y="401" width="94" height="32"/>
                                 <connections>
                                     <action selector="onStepperChanged:" destination="klF-Cn-5HN" eventType="valueChanged" id="NhJ-qh-yUY"/>
                                 </connections>
                             </stepper>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Gt8-Sf-eFy">
+                                <rect key="frame" x="105" y="58" width="205" height="15"/>
+                                <segments>
+                                    <segment title="Stepper"/>
+                                    <segment title="Slider"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segementedControlChange:" destination="klF-Cn-5HN" eventType="valueChanged" id="Ys1-0k-olI"/>
+                                </connections>
+                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUf-PH-wBi">
-                                <rect key="frame" x="183" y="650" width="49" height="30"/>
+                                <rect key="frame" x="183" y="465" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitRating:" destination="klF-Cn-5HN" eventType="touchDown" id="Jjn-D0-hpy"/>
@@ -258,19 +268,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uN3-Ia-Ztg" firstAttribute="leading" secondItem="ufV-Ra-De8" secondAttribute="leading" constant="70" id="9MN-ds-oc6"/>
-                            <constraint firstItem="ufV-Ra-De8" firstAttribute="trailing" secondItem="QUf-PH-wBi" secondAttribute="trailing" constant="182" id="Aab-V9-VXS"/>
+                            <constraint firstItem="QUf-PH-wBi" firstAttribute="top" secondItem="TMr-QE-KkV" secondAttribute="bottom" constant="32" id="ED1-bn-Yhb"/>
+                            <constraint firstItem="ufV-Ra-De8" firstAttribute="trailing" secondItem="QUf-PH-wBi" secondAttribute="trailing" constant="182" id="FNQ-HX-xQy"/>
+                            <constraint firstItem="ufV-Ra-De8" firstAttribute="bottom" secondItem="QUf-PH-wBi" secondAttribute="bottom" constant="367" id="GwP-Ug-3XP"/>
                             <constraint firstItem="QHx-t0-75s" firstAttribute="centerX" secondItem="ufV-Ra-De8" secondAttribute="centerX" id="HjB-E8-0Hc"/>
                             <constraint firstItem="0Yy-Nh-rxh" firstAttribute="centerX" secondItem="ufV-Ra-De8" secondAttribute="centerX" id="IMi-Rw-kWq"/>
-                            <constraint firstItem="QUf-PH-wBi" firstAttribute="top" secondItem="uN3-Ia-Ztg" secondAttribute="bottom" constant="36" id="JYt-XC-8xE"/>
                             <constraint firstItem="0Yy-Nh-rxh" firstAttribute="top" secondItem="ufV-Ra-De8" secondAttribute="top" constant="63" id="M14-cj-nEn"/>
                             <constraint firstItem="uN3-Ia-Ztg" firstAttribute="centerX" secondItem="ufV-Ra-De8" secondAttribute="centerX" id="M3E-f7-GJk"/>
+                            <constraint firstItem="ufV-Ra-De8" firstAttribute="trailing" secondItem="Gt8-Sf-eFy" secondAttribute="trailing" constant="104" id="Pae-Xp-eVe"/>
                             <constraint firstItem="QHx-t0-75s" firstAttribute="top" secondItem="0Yy-Nh-rxh" secondAttribute="bottom" constant="105" id="SRb-yt-zIc"/>
-                            <constraint firstItem="uN3-Ia-Ztg" firstAttribute="top" secondItem="TMr-QE-KkV" secondAttribute="bottom" constant="66" id="iJJ-oc-XVg"/>
-                            <constraint firstItem="TMr-QE-KkV" firstAttribute="top" secondItem="QHx-t0-75s" secondAttribute="bottom" constant="170" id="kL8-gF-ZC3"/>
-                            <constraint firstItem="ufV-Ra-De8" firstAttribute="bottom" secondItem="QUf-PH-wBi" secondAttribute="bottom" constant="182" id="qg8-NS-NAo"/>
+                            <constraint firstItem="Gt8-Sf-eFy" firstAttribute="top" secondItem="ufV-Ra-De8" secondAttribute="top" constant="14" id="g54-4a-Z6V"/>
+                            <constraint firstItem="QUf-PH-wBi" firstAttribute="leading" secondItem="ufV-Ra-De8" secondAttribute="leading" constant="183" id="gLH-LQ-ctd"/>
+                            <constraint firstItem="uN3-Ia-Ztg" firstAttribute="top" secondItem="TMr-QE-KkV" secondAttribute="bottom" constant="-32" id="iJJ-oc-XVg"/>
+                            <constraint firstItem="TMr-QE-KkV" firstAttribute="top" secondItem="QHx-t0-75s" secondAttribute="bottom" constant="85" id="kL8-gF-ZC3"/>
                             <constraint firstItem="ufV-Ra-De8" firstAttribute="trailing" secondItem="uN3-Ia-Ztg" secondAttribute="trailing" constant="70" id="sH1-gL-nne"/>
-                            <constraint firstItem="QUf-PH-wBi" firstAttribute="leading" secondItem="ufV-Ra-De8" secondAttribute="leading" constant="183" id="syb-Vn-gjd"/>
+                            <constraint firstItem="Gt8-Sf-eFy" firstAttribute="leading" secondItem="ufV-Ra-De8" secondAttribute="leading" constant="105" id="svb-7v-ygX"/>
                             <constraint firstItem="TMr-QE-KkV" firstAttribute="centerX" secondItem="ufV-Ra-De8" secondAttribute="centerX" id="uJ1-lB-6a5"/>
+                            <constraint firstItem="0Yy-Nh-rxh" firstAttribute="top" secondItem="Gt8-Sf-eFy" secondAttribute="bottom" constant="35" id="voC-ot-l65"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pJF-TF-xwB"/>
@@ -278,11 +292,12 @@
                         <outlet property="currentRatingLabel" destination="QHx-t0-75s" id="dsS-nv-8hA"/>
                         <outlet property="ratingSlider" destination="uN3-Ia-Ztg" id="x8C-hQ-Rbm"/>
                         <outlet property="ratingStepper" destination="TMr-QE-KkV" id="mKb-hD-Gc4"/>
+                        <outlet property="segmentedControl" destination="Gt8-Sf-eFy" id="rjn-yz-6oi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEy-Mf-ZlX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-704" y="828"/>
+            <point key="canvasLocation" x="-759.4202898550725" y="995.75892857142856"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="feR-cu-mhf">
@@ -352,7 +367,7 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
-                                    <outlet property="imageView" destination="icu-HV-lMO" id="Ylj-cd-W5f"/>
+                                    <outlet property="imageView" destination="icu-HV-lMO" id="WX8-7i-201"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -374,14 +389,6 @@
                     <view key="view" contentMode="scaleToFill" id="eau-1c-p5k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cId-sb-czg">
-                                <rect key="frame" x="20" y="88" width="374" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="ZJh-1k-PIu"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="d1x-pg-Ab0"/>
-                            </scrollView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TqL-ed-AZF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
