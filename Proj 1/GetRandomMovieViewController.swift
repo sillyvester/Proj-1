@@ -39,11 +39,6 @@ class GetRandomMovieViewController: UIViewController, UIPickerViewDelegate, UIPi
         return pickerData[row]
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print(pickerData[row])
-        selectedPickerValue = pickerData[row]
-    }
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -52,7 +47,7 @@ class GetRandomMovieViewController: UIViewController, UIPickerViewDelegate, UIPi
         // Pass the selected object to the new view controller.
         
         if let vc = segue.destination as? RandomMovieViewController{
-                vc.genreName = selectedPickerValue
+            vc.genreName = pickerData[self.genrePicker.selectedRow(inComponent: 0)]
         }
     }
     

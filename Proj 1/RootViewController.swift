@@ -5,20 +5,10 @@
 //  Created by Joshua Sylvester on 9/7/21.
 //
 
-// STILL NEED:
-// Picker delegate
-// Segmented Control
-// Scroll view
-// Use if lets
-// Use lazy instantiation
-// Landscape mode
-
-
 import UIKit
 
 extension WelcomeViewController {
     func updateFeedbackText(withText text: String) {
-        print("Updating like or not text field")
         self.feedbackLabel.text = text
     }
 }
@@ -45,7 +35,6 @@ class WelcomeViewController: UIViewController, RateTheAppViewControllerDelegate 
     var delegate: RateTheAppViewControllerDelegate?
     
     @IBAction func onFeedbackButtonPressed(_ sender: Any) {
-        print("Feedback Button Press")
         if let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RatingVC") as? RateTheAppViewController{
             vc.delegate = self
             self.present(vc, animated: true, completion: nil)

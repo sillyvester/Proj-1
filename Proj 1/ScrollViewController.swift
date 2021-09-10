@@ -10,9 +10,9 @@ import UIKit
 // Scroll view code adapted from : https://medium.com/swlh/swift-5-how-to-programmatically-add-images-to-a-uiscrollview-ee5b97aa2e00
 // Note that this was a programmtic implementation instead of storyboard. It just seemed easier to do it this way
 class ScrollViewController: UIViewController{
-    var movies = [String]()
+    lazy var movies = [String]()
     var scrollView: UIScrollView!
-    var images = [UIImageView]()
+    lazy var images = [UIImageView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

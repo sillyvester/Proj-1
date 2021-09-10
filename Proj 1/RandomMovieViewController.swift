@@ -22,9 +22,6 @@ class RandomMovieViewController: UIViewController {
            let genresDict = dict["genres"] as? NSDictionary,
            let movies = genresDict.object(forKey: genreName) as? [String],
            let internalMovieName = movies.randomElement() {
-            print(genreName)
-            print(movies)
-            print(dict)
             movieName.text = internalMovieName
             moviePoster.image = UIImage(named: internalMovieName)
         }

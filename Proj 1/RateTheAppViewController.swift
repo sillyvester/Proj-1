@@ -60,7 +60,6 @@ class RateTheAppViewController: UIViewController {
     
     @IBAction func onStepperChanged(_ sender: UIStepper) {
         let newRating = Int(sender.value)
-        print("stepper new rating: ", newRating)
         if (newRating > 10){
             self.curRating = 10
         }else{
@@ -71,7 +70,6 @@ class RateTheAppViewController: UIViewController {
     
     @IBAction func onSliderChanged(_ sender: UISlider) {
         let newRating = Int(sender.value)
-        print("slider new rating: ", newRating)
         if (newRating > 10){
             self.curRating = 10
         }else{
