@@ -26,11 +26,11 @@ extension WelcomeViewController {
 class WelcomeViewController: UIViewController, RateTheAppViewControllerDelegate {
     
     // MARK: For Timer
-    var timer: Timer?
-    var timeInterval = 1
-    var runCount = 0
-    var greetingStringIndex = 0
-    var arrayOfTexts = ["Welcome to the App",
+    lazy var timer = Timer()
+    lazy var timeInterval = 1
+    lazy var runCount = 0
+    lazy var greetingStringIndex = 0
+    lazy var arrayOfTexts = ["Welcome to the App",
                         "Good Morning Dr. Larson",
                         "Hello Dr. Larson",
                         "Larson is the Best",
@@ -68,11 +68,13 @@ class WelcomeViewController: UIViewController, RateTheAppViewControllerDelegate 
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        timer = Timer.scheduledTimer(timeInterval: TimeInterval(timeInterval),
+
+        self.timer = Timer.scheduledTimer(timeInterval: TimeInterval(timeInterval),
                                      target: self,
                                      selector: #selector(startTimer),
                                      userInfo: nil,
                                      repeats: true)
+            
         
         self.startTimer()
         self.initImage()
@@ -91,6 +93,7 @@ class WelcomeViewController: UIViewController, RateTheAppViewControllerDelegate 
         }
     }
 
+    
     @objc func startTimer() {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             if (self.runCount % 5 == 0){

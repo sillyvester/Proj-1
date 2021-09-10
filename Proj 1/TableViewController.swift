@@ -9,8 +9,8 @@ import UIKit
 
 class TableViewController: UITableViewController{
     
-    var appOptionsLabels = [String]()
-    var appOptionsSegues = [String]()
+    lazy var appOptionsLabels = [String]()
+    lazy var appOptionsSegues = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
